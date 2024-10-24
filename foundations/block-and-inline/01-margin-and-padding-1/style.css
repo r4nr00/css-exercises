@@ -7,15 +7,15 @@ body {
   background: pink;
   border: 3px solid blue;
   /* CHANGE ME */
-  padding: 0px;
-  margin: 0px;
+  padding: 32px;
+  margin: 12px;
 }
 
 .two {
   background: lightblue;
   border: 3px solid purple;
   /* CHANGE ME */
-  margin-bottom: 0px;
+  margin-bottom: 48px;
 }
 
 .three {
@@ -23,6 +23,17 @@ body {
   border: 3px solid brown;
   width: 200px;
   /* CHANGE ME */
-  padding: 0px;
-  margin-left: 0px;
+  padding: 32px;
+
+  /* 
+  Logic:
+  Set div all the way to right right of screen.
+  Subtract width of box (using default box model)
+  (padding and border for left and right sides are included in width)
+  */
+
+  /* margin-left: calc(100% - 200px - 32px - 32px - 3px - 3px); */
+
+  /* Simpler answer is using margin-left: auto*/
+  margin-left: auto;
 }
